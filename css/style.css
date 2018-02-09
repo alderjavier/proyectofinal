@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Federo|Merienda+One');
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    font-family: 'Federo', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merienda One', cursive;
+    letter-spacing: 1.5px;
+}
+.section__titulo{
+   text-align: center;
+   font-size: 40px;
+   color: black;
+}
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+.carousel{   
+   width: 100%;   
+   position: absolute;
+   z-index: -1;
+   margin-bottom: 10px;
+   background-color: black;
+}
+.carousel img{
+    width: 100%;
+}
+.texto{
+    position: absolute;
+}
+/*---------------- rev styles*------------------------------------*/
+.rev{
+    padding-top: 20px;
+}
+.rev__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.rev__description{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    width: 60%;
+    height: 100%;
+    padding: 30px;
+}
+.rev__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+/*---------------- rev2 styles*------------------------------------*/
+.rev2__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.rev2__description{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    width: 60%;
+    height: 100%;
+    padding: 30px;
+}
+.rev2__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+/*---------------- header styles*------------------------------------*/
+.titulo {
+    height: 60px;
+}
+.titulo .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    text-align: center;
+    right: 180px;
+}
+.logo, .icon-menu {
+    margin: 5px;
+    color: black;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: black;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*------------------------Menu Styles---------------------------*/
+.nav{
+    position: absolute;
+    top: 120px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link {
+    display: block;
+    padding: 20px;
+    background: #000000;
+    text-decoration: none;
+    color: white;
+}
+.menu__link:hover, .select {
+    background: white;
+    color: #FBA919;
+}
+.show{
+    left: 0;
+}
+/*------------------Banner Styles-----------------------------------*/
+
+/*------------------------Info Styles---------------------------*/
+.info__columna{
+    background: black;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/*------------------------curse Styles---------------------------*/
+.curse__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.curse__description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.curse__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+/*------------------------footer Styles---------------------------*/
+.footer{
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color:#333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+/*------------------------responsive Styles---------------------------*/
+
+@media(min-width:480px) {
+    .logo{
+        font-size: 40px;
+    }
+    .banner__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .banner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    .info, .curse {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+    }
+    .info__columna{
+        width: 32%;
+    }
+    .info__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .curse {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .section__titulo{
+        width: 100%;
+    }
+    .curse__columna{
+        width: 48%;
+        
+    }
+    .footer .social [class^="icon-"]{
+        margin: 0 10px;
+    }
+}
+@media(min-width:768px) {
+    .banner__titulo{
+        font-size: 50px;
+    }
+    .curse__titulo{
+        font-size: 40px;
+    }
+}
+@media(min-width:1024px) {
+    .contenedor{
+        width: 1000px;
+    }
+    .section__titulo{
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    .banner__titulo{
+        font-size: 60px;
+    }
+    .banner__txt{
+        font-size: 25px;
+    }
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .curse__description{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .curse__titulo{
+        font-size: 50px;
+        margin:0;
+    }
+    .curse__txt{
+        font-size: 20px;
+    }
+}
